@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'standalone', // Ensures the app runs standalone for deployment on Render
     webpack: (config) => {
       config.module.rules.push({
         test: /\.css$/,
